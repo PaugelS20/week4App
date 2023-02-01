@@ -1,5 +1,6 @@
 import React from "react";
 // import logo from './logo.svg';
+import { CounterButton } from "./CounterButton";
 import { Greeting } from "./Greeting";
 import { PeopleList } from "./PeopleList";
 import './App.css';
@@ -26,7 +27,7 @@ function App() {
   return (    
     <div className="App">
       <header className="App-header">
-      
+        <CounterButton/>
       </header>
     </div>
   );
