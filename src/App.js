@@ -1,34 +1,36 @@
-import React from "react";
-// import logo from './logo.svg';
+import React, {useState} from "react";
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
+import { HomePage, CounterButtonPage, PeopleListPage } from './pages';
+import { CongratulationsMessage } from "./CongratulationsMessage";
 import { CounterButton } from "./CounterButton";
 import { Greeting } from "./Greeting";
 import { PeopleList } from "./PeopleList";
 import './App.css';
+import RootLayout from "./pages/RootLayout";
 
-const people = [{
-  name: 'Matthew',
-  age: 40,
-  hairColor: 'brown',
-}, {
-  name: 'Mallory',
-  age: 17,
-  hairColor: 'red',
-}, {
-  name: 'Brian',
-  age: 55,
-  hairColor: 'Blonde'
-}];
 
+const router = createBrowserRouter (
+  createRoutesFromElements (
+    <Route path="/" element={<RootLayout/>}>
+      <Route path="HomePage" element={<HomePage/>}/>
+      <Route path="CounterButtonPage" element={<CounterButtonPage/>}/>
+      <Route path="PeopleListPage" element={<PeopleListPage/>}/>
+    </Route>
+  )
+)
 
 function App() {
-  let adjective = 'Ipsum';
-  let url = "https://reactjs.org"
+  const [numberOfClicks, setNumberOfClicks] = useState(0);
+  const [hideMessage, setHideMessage] = useState(false);
 
-  return (    
+  // const increment = () => setNumberOfClicks(numberOfClicks + 1);
+  return ( 
     <div className="App">
-      <header className="App-header">
-        <CounterButton/>
-      </header>
+
+
+
+
+      <RouterProvider router={router}/>
     </div>
   );
 }
