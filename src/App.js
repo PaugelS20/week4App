@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 import { HomePage, CounterButtonPage, PeopleListPage } from './pages';
-import { CongratulationsMessage } from "./CongratulationsMessage";
-import { CounterButton } from "./CounterButton";
-import { Greeting } from "./Greeting";
-import { PeopleList } from "./PeopleList";
+// import { CongratulationsMessage } from "./CongratulationsMessage";
+// import { CounterButton } from "./CounterButton";
+// import { Greeting } from "./Greeting";
+// import { PeopleList } from "./PeopleList";
 import './App.css';
 import RootLayout from "./pages/RootLayout";
 

@@ -7,7 +7,7 @@ export default function RootLayout() {
         <header>
             <nav>
                 <h1>Jobarouter</h1>
-                <NavLink to="HomePage">Home</NavLink>
+                <NavLink to="HomePage" className={"nav-link"}>Home</NavLink>
                 <NavLink to="CounterButtonPage">Counter Button</NavLink>
                 <NavLink to="PeopleListPage">People List</NavLink>
             </nav>
