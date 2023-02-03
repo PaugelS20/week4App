@@ -13,7 +13,7 @@ export default function RootLayout() {
           </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-      <a className="navbar-brand" href="HomePage">Homepage</a>
+      <a className="navbar-brand" href="HomePage"><img src="./logo192.png" alt="" /></a>
             <li className="nav-item">
               <NavLink to="HomePage" className={"nav-link"}>Home</NavLink>
             </li>
