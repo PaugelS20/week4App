@@ -19,7 +19,9 @@ const people = [{
     return ( 
     <>
         <h1>The People List Page</h1>
+        <div>
         <PeopleList people={people}/>
+        </div>
     </>
     )
   }

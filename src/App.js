@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
-import { HomePage, CounterButtonPage, PeopleListPage } from './pages';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from "react-router-dom";
+import { HomePage, CounterButtonPage, PeopleListPage, NotFoundPage } from './pages';
 // import { CongratulationsMessage } from "./CongratulationsMessage";
 // import { CounterButton } from "./CounterButton";
 // import { Greeting } from "./Greeting";
@@ -11,10 +11,11 @@ import RootLayout from "./pages/RootLayout";
 
 const router = createBrowserRouter (
   createRoutesFromElements (
-    <Route path="/" element={<RootLayout/>}>
-      <Route path="HomePage" element={<HomePage/>}/>
-      <Route path="CounterButtonPage" element={<CounterButtonPage/>}/>
-      <Route path="PeopleListPage" element={<PeopleListPage/>}/>
+    <Route path="/" element={<RootLayout/>} errorElement={<NotFoundPage/>}>
+      <Route index path="/HomePage" element={<HomePage/>}/>
+      <Route path="/CounterButtonPage" element={<CounterButtonPage/>}/>
+      <Route path="/PeopleListPage" element={<PeopleListPage/>}/>
+      <Route path="" element={<NotFoundPage/>}/>
     </Route>
   )
 )
