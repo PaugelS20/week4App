@@ -1,7 +1,10 @@
-import React from 'react'
+import { Navigate } from "react-router-dom";
 
 export const ProtectedPage = () => {
-  return (
-    <div>ProtectedPage</div>
-  )
+    const isAuthed = false;
+    return isAuthed 
+    ? <h1>Only authorized users should be able to see this</h1> 
+    : <Navigate to="/"/>
+    
+
 }

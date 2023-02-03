@@ -10,22 +10,22 @@ export default function RootLayout() {
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-			<div className="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul className="navbar-nav me-auto mb-2 mb-lg-0">
-					<a className="navbar-brand" href="HomePage"><img src="./logo192.png" alt="" /></a>
-					<li className="nav-item">
-						<NavLink to="HomePage" className={"nav-link"}>Home</NavLink>
-					</li>
+            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <a className="navbar-brand" href="HomePage"><img src="./logo192.png" alt="" /></a>
+                <li className="nav-item">
+                  <NavLink to="HomePage" className={"nav-link"}>Home</NavLink>
+                </li>
 
-					<li className="nav-item">
-						<NavLink to="CounterButtonPage" className={"nav-link"}>Counter Button</NavLink>
-					</li>
+                <li className="nav-item">
+                  <NavLink to="CounterButtonPage" className={"nav-link"}>Counter Button</NavLink>
+                </li>
 
-					<li className="navitem">
-						<NavLink to="PeopleListPage" className={"nav-link"}>People List</NavLink>
-					</li>
-				</ul>
-			</div>
+                <li className="navitem">
+                  <NavLink to="PeopleListPage" className={"nav-link"}>People List</NavLink>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </header>

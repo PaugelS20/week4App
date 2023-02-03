@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from "react-router-dom";
-import { HomePage, CounterButtonPage, PeopleListPage, NotFoundPage } from './pages';
+import { createBrowserRouter, createRoutesFromElements, Navigate, Route, RouterProvider} from "react-router-dom";
+import { HomePage, CounterButtonPage, PeopleListPage, NotFoundPage, ProtectedPage } from './pages';
 // import { CongratulationsMessage } from "./CongratulationsMessage";
 // import { CounterButton } from "./CounterButton";
 // import { Greeting } from "./Greeting";
@@ -15,6 +15,7 @@ const router = createBrowserRouter (
       <Route index path="/HomePage" element={<HomePage/>}/>
       <Route path="/CounterButtonPage" element={<CounterButtonPage/>}/>
       <Route path="/PeopleListPage" element={<PeopleListPage/>}/>
+      <Route path="/Protected" element={<Navigate to="/Homepage"/>}/>
       <Route path="" element={<NotFoundPage/>}/>
     </Route>
   )
@@ -27,10 +28,6 @@ function App() {
   // const increment = () => setNumberOfClicks(numberOfClicks + 1);
   return ( 
     <div className="App">
-
-
-
-
       <RouterProvider router={router}/>
     </div>
   );
