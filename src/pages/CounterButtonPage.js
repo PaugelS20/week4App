@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import { useLocation } from "react-router-dom";
-import queryString  from "query-string";
 import { CounterButton } from "../CounterButton";
 import { CongratulationsMessage } from "../CongratulationsMessage";
 
