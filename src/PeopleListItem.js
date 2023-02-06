@@ -1,4 +1,3 @@
-import { React } from "react";
 import './PeopleListItem.css';
 
 export const PeopleListItem = ({ person }) => (

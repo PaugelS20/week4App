@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Greeting = ({ name, numberOfMessages }) => {
     if (!name) return null;
 

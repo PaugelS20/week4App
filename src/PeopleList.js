@@ -1,4 +1,3 @@
-import React from "react";
 import { PeopleListItem } from "./PeopleListItem";
 
 export const PeopleList = ({ people }) => (

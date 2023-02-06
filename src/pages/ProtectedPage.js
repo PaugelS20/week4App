@@ -1,16 +1,11 @@
-import { Navigate, Outlet } from "react-router-dom";
+import { Navigate} from "react-router-dom";
 
 export const ProtectedPage = () => {
-    
-    const isAuthed = false;
-
-    // return (isAuthed ? <Outlet/> : <Navigate to="/"/>)
+    const isAuthenticated = true;
+    return isAuthenticated 
+     ? (
+     <h1>Only authorized users can see this!</h1>
+     ) : (
+     <Navigate to="/"/>
+     );
 }
-
-// useEffect(()=> {
-//     if (!isAuthed) {
-//         history.push('/');
-//     }
-// });
-
-// 
