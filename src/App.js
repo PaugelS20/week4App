@@ -27,7 +27,7 @@ const App = () => {
                 <Route exact path="/people-list" element={ <PeopleListPage/> }/>
                 <Route path="/protected" element={ <ProtectedPage/> }/>
                 <Route path="/controlled" element={ <ControlledFormPage/> }/>
-                {/* <Route path="/uncontrolled" element={ <UncontrolledFormPage/> }/> */}
+                <Route path="/uncontrolled" element={ <UncontrolledFormPage/> }/>
                 <Route path="*" element={ <NotFoundPage/> }/>
           </Routes>
         </BrowserRouter>

@@ -1,3 +1,4 @@
+export { UncontrolledFormPage } from './UncontrolledFormPage';
 export { ControlledFormPage } from './ControlledFormPage';
 export { HomePage } from './HomePage';
 export { CounterButtonPage } from './CounterButtonPage';
