@@ -5,6 +5,8 @@ export const ControlledFormPage = () => {
   const [email, setEmail] = useState('');
   const [favoriteColor, setFavoriteColor] = useState('');
   return (
+    <>
+    <h1>Controlled Form</h1>
     <form>
       <h3>Please enter your information:</h3>
       <div>
@@ -36,5 +38,6 @@ export const ControlledFormPage = () => {
         e.preventDefault();
       }}>Submit</button>
     </form>
+    </>
   )
 }

@@ -5,9 +5,10 @@ export const UncontrolledFormPage = () => {
   const favoriteColorInput = React.createRef();
 
     return (
+    <>
+    <h1>Uncontrolled Form</h1>
     <form>
         <h3>Please enter your information:</h3>
-
         <div>
             <input 
             ref={nameInput} 
@@ -35,5 +36,6 @@ export const UncontrolledFormPage = () => {
         e.preventDefault();
       }}>Submit</button>
     </form>
+    </>
   )
 }
