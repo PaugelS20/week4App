@@ -4,9 +4,7 @@ export const CounterButton = ({ onIncrement, numberOfClicks }) => {
     console.log("CounterButton Rendering");
     useEffect(()=> {
         console.log('useEffect Function called!');
-        
-        return console.log('unmounting');
-    }, []);
+        }, []);
 
     return (
         <>

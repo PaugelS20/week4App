@@ -9,7 +9,8 @@ import {
   NotFoundPage, 
   ProtectedPage,
   ControlledFormPage,
-  UncontrolledFormPage } from './pages';
+  UncontrolledFormPage,
+  UserProfilePage } from './pages';
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
                 <Route exact path="/counter" element={ <CounterButtonPage/> }/>
                 <Route exact path="/people-list" element={ <PeopleListPage/> }/>
                 <Route path="/protected" element={ <ProtectedPage/> }/>
+                <Route path="/user" element={ <UserProfilePage/> }/>
                 <Route path="/forms" element={ <FormsNavBar />} />
                     <Route path="/forms/controlled" element={ <ControlledFormPage/> }/>
                     <Route path="/forms/uncontrolled" element={ <UncontrolledFormPage/> }/>
